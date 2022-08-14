@@ -1,0 +1,4 @@
+<ng-container [matColumnDef]="column.name">
+  <th mat-header-cell *matHeaderCellDef>{{ column.name }}</th>
+  <td mat-cell *matCellDef="let element"> {{ typeof element[column.name] === 'boolean' }} </td>
+</ng-container>
